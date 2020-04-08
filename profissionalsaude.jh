@@ -1,0 +1,33 @@
+
+
+entity ProfissionalSaude {
+	email String,
+    nomeCompleto String,
+    dataNascimento Instant,
+    nomeMae String,
+    nomePai String,
+    nacionalidade String,
+    rgRne String,
+    orgaExpedidorUf String,
+    cpf Integer,
+    estadoCivil String,
+    pisPasep Integer,
+    profissaoAreaAtuacao String,
+    numeroRegistroProfissional Integer,
+    uf String,
+    rqeComprovanteEspecializacao String,
+    comprovanteResidenciaMedica String,
+    numeroCartaoSus Integer,
+    enderecoResidencialComercial String,
+    numero Integer,
+    complemento String,
+    bairro String,
+    cidade String,
+    uf String,
+    cep Integer,
+    telefoneFixo Integer,
+    celular Integer,
+    dataCadastro Instant
+}
+
+
