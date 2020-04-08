@@ -1,0 +1,130 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="profissionalSaude">
+            <h2><span jhiTranslate="saudeemcasaApp.profissionalSaude.detail.title">Profissional Saude</span> {{ profissionalSaude.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.email">Email</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.email }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.nomeCompleto">Nome Completo</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.nomeCompleto }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.dataNascimento">Data Nascimento</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.dataNascimento }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.nomeMae">Nome Mae</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.nomeMae }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.nomePai">Nome Pai</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.nomePai }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.nacionalidade">Nacionalidade</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.nacionalidade }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.rgRne">Rg Rne</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.rgRne }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.orgaExpedidorUf">Orga Expedidor Uf</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.orgaExpedidorUf }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.cpf">Cpf</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.cpf }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.estadoCivil">Estado Civil</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.estadoCivil }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.pisPasep">Pis Pasep</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.pisPasep }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.profissaoAreaAtuacao">Profissao Area Atuacao</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.profissaoAreaAtuacao }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.numeroRegistroProfissional">Numero Registro Profissional</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.numeroRegistroProfissional }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.uf">Uf</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.uf }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.rqeComprovanteEspecializacao">Rqe Comprovante Especializacao</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.rqeComprovanteEspecializacao }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.comprovanteResidenciaMedica">Comprovante Residencia Medica</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.comprovanteResidenciaMedica }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.numeroCartaoSus">Numero Cartao Sus</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.numeroCartaoSus }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.enderecoResidencialComercial">Endereco Residencial Comercial</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.enderecoResidencialComercial }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.numero">Numero</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.numero }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.complemento">Complemento</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.complemento }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.bairro">Bairro</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.bairro }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.cidade">Cidade</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.cidade }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.cep">Cep</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.cep }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.telefoneFixo">Telefone Fixo</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.telefoneFixo }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.celular">Celular</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.celular }}</span>
+                </dd>
+                <dt><span jhiTranslate="saudeemcasaApp.profissionalSaude.dataCadastro">Data Cadastro</span></dt>
+                <dd>
+                    <span>{{ profissionalSaude.dataCadastro }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/profissional-saude', profissionalSaude.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
