@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+        <property name="autoIncrement" value="true"/>
+
+    <!--
+        Added the entity ProfissionalSaude.
+    -->
+    <changeSet id="20200408000600-1" author="jhipster">
+        <createTable tableName="profissional_saude">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="nome_completo" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="data_nascimento" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <column name="nome_mae" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="nome_pai" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="nacionalidade" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rg_rne" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="orga_expedidor_uf" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cpf" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="estado_civil" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="pis_pasep" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="profissao_area_atuacao" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="numero_registro_profissional" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="uf" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rqe_comprovante_especializacao" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comprovante_residencia_medica" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="numero_cartao_sus" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="endereco_residencial_comercial" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="numero" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="complemento" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bairro" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cidade" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cep" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="telefone_fixo" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="celular" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="data_cadastro" type="datetime">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="profissional_saude" columnName="data_nascimento" columnDataType="datetime"/>
+        <dropDefaultValue tableName="profissional_saude" columnName="data_cadastro" columnDataType="datetime"/>
+    </changeSet>
+
+    <changeSet id="20200408000600-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20200408000600-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/profissional_saude.csv"
+                  separator=";"
+                  tableName="profissional_saude">
+            <column name="id" type="numeric"/>
+            <column name="email" type="string"/>
+            <column name="nome_completo" type="string"/>
+            <column name="data_nascimento" type="datetime"/>
+            <column name="nome_mae" type="string"/>
+            <column name="nome_pai" type="string"/>
+            <column name="nacionalidade" type="string"/>
+            <column name="rg_rne" type="string"/>
+            <column name="orga_expedidor_uf" type="string"/>
+            <column name="cpf" type="numeric"/>
+            <column name="estado_civil" type="string"/>
+            <column name="pis_pasep" type="numeric"/>
+            <column name="profissao_area_atuacao" type="string"/>
+            <column name="numero_registro_profissional" type="numeric"/>
+            <column name="uf" type="string"/>
+            <column name="rqe_comprovante_especializacao" type="string"/>
+            <column name="comprovante_residencia_medica" type="string"/>
+            <column name="numero_cartao_sus" type="numeric"/>
+            <column name="endereco_residencial_comercial" type="string"/>
+            <column name="numero" type="numeric"/>
+            <column name="complemento" type="string"/>
+            <column name="bairro" type="string"/>
+            <column name="cidade" type="string"/>
+            <column name="cep" type="numeric"/>
+            <column name="telefone_fixo" type="numeric"/>
+            <column name="celular" type="numeric"/>
+            <column name="data_cadastro" type="datetime"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here, do not remove-->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

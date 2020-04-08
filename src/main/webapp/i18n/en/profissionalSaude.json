@@ -1,0 +1,47 @@
+{
+  "saudeemcasaApp": {
+    "profissionalSaude": {
+      "home": {
+        "title": "Profissional Saudes",
+        "createLabel": "Create a new Profissional Saude",
+        "createOrEditLabel": "Create or edit a Profissional Saude",
+        "notFound": "No Profissional Saudes found"
+      },
+      "created": "A new Profissional Saude is created with identifier {{ param }}",
+      "updated": "A Profissional Saude is updated with identifier {{ param }}",
+      "deleted": "A Profissional Saude is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Profissional Saude {{ id }}?"
+      },
+      "detail": {
+        "title": "Profissional Saude"
+      },
+      "email": "Email",
+      "nomeCompleto": "Nome Completo",
+      "dataNascimento": "Data Nascimento",
+      "nomeMae": "Nome Mae",
+      "nomePai": "Nome Pai",
+      "nacionalidade": "Nacionalidade",
+      "rgRne": "Rg Rne",
+      "orgaExpedidorUf": "Orga Expedidor Uf",
+      "cpf": "Cpf",
+      "estadoCivil": "Estado Civil",
+      "pisPasep": "Pis Pasep",
+      "profissaoAreaAtuacao": "Profissao Area Atuacao",
+      "numeroRegistroProfissional": "Numero Registro Profissional",
+      "uf": "Uf",
+      "rqeComprovanteEspecializacao": "Rqe Comprovante Especializacao",
+      "comprovanteResidenciaMedica": "Comprovante Residencia Medica",
+      "numeroCartaoSus": "Numero Cartao Sus",
+      "enderecoResidencialComercial": "Endereco Residencial Comercial",
+      "numero": "Numero",
+      "complemento": "Complemento",
+      "bairro": "Bairro",
+      "cidade": "Cidade",
+      "cep": "Cep",
+      "telefoneFixo": "Telefone Fixo",
+      "celular": "Celular",
+      "dataCadastro": "Data Cadastro"
+    }
+  }
+}

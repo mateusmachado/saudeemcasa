@@ -1,0 +1,121 @@
+{
+    "name": "ProfissionalSaude",
+    "fields": [
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nomeCompleto",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataNascimento",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "nomeMae",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nomePai",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nacionalidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rgRne",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "orgaExpedidorUf",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cpf",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "estadoCivil",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pisPasep",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "profissaoAreaAtuacao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "numeroRegistroProfissional",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "uf",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rqeComprovanteEspecializacao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "comprovanteResidenciaMedica",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "numeroCartaoSus",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enderecoResidencialComercial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "numero",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "complemento",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "bairro",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cidade",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cep",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "telefoneFixo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "celular",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dataCadastro",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200408000600",
+    "entityTableName": "profissional_saude",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
